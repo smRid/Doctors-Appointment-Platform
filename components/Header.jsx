@@ -1,6 +1,8 @@
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from './ui/button'
 
 const Header = () => {
   return (
@@ -16,6 +18,27 @@ const Header = () => {
                 />
 
       </Link>
+      <div className='flex items-center space-x-2'>
+        <SignedOut>
+          <SignInButton>
+            <Button variant="secondary">Sign In</Button>
+          </SignInButton>
+        </SignedOut>
+
+          <SignedIn>
+          <UserButton 
+            appearance={{
+              elements: {
+                avatarBox: 'h-10 w-10',
+                userButtonPopoverCard: 'shadow-xl',
+                userButtonMainIdentifier: 'font-semibold',
+              },
+            }}
+          
+          />
+        </SignedIn>
+      </div>
+
     </nav>
     </header>
   )
