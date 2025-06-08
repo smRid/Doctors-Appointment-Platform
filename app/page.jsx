@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight, Check, Stethoscope } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { creditBenefits, features, testimonials } from "@/lib/data";
+import Pricing from "@/components/pricing";
 
 
 const page = () => {
@@ -107,7 +108,7 @@ const page = () => {
 
           <div>
             {/* Pricing Table */}
-
+            <Pricing/>
             <Card className="mt-12 bg-muted/20 border-emerald-900/30">
               <CardHeader>
               <CardTitle className="text-xl font-semibold text-white flex items-center">
