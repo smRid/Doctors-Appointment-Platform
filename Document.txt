@@ -32,6 +32,15 @@ Authentication System
     ○ Buttons with various styles (outline, ghost, secondary)
     ○ Icons for better visual navigation
     ○ Responsive layouts that adapt to different screen sizes
+• Updated the pricing table component:
+    ○ Applied a consistent dark theme with gray backgrounds and visible borders
+    ○ Enhanced hover effects for better interactivity
+    ○ Improved typography for better readability
+    ○ Styled buttons and badges to match the dark theme
+• Styled the checkout page:
+    ○ Applied dark theme colors for background, text, and input fields
+    ○ Added consistent borders and padding for form elements
+    ○ Improved button styling for better user experience
 
 #Navigation System
 
@@ -47,6 +56,10 @@ Authentication System
 • Resolved issues with component exports in layout files
 • Improved component structure and file organization
 • Implemented proper error handling for auth-related operations
+• Fixed issues with the pricing table and checkout page not applying the dark theme
+• Enhanced the visual hierarchy and spacing in the pricing table component
+• Improved hover effects and transitions for interactive elements
+• Ensured consistent styling across the pricing table and checkout page
 
 #In-Progress Features
 
