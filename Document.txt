@@ -1,0 +1,56 @@
+###Doctors Appointment Platform - Project Progress Document
+
+#Project Overview
+
+The project is a Doctors Appointment Platform called "InstaCheckup" built with Next.js and using Clerk for authentication. The application supports multiple user roles (Admin, Doctor, Patient, and Unassigned) with different interfaces and permissions for each role.
+
+#Progress So Far
+Authentication System
+• Implemented Clerk authentication for user sign-in and sign-up
+• Set up protected routes for authenticated users
+• Created custom auth layouts for sign-in and sign-up pages
+• Fixed routing conflicts between standard and catch-all routes in auth pages
+
+#User Roles and Permissions
+
+• Created a system to check and assign user roles (checkUser.js)
+• Implemented role-based navigation and access control
+• Set up four distinct user roles:
+    ○ Admin: Access to admin dashboard for system management
+    ○ Doctor: Access to doctor dashboard for appointment management
+    ○ Patient: Access to appointment booking and management
+    ○ Unassigned: Redirects users to complete their profile
+
+#UI Components
+
+• Implemented a responsive header with:
+    ○ Logo and branding
+    ○ Role-specific navigation links
+    ○ Mobile-friendly design with collapsible buttons
+    ○ User authentication buttons (Sign In/User Profile)
+• Created UI components using a design system:
+    ○ Buttons with various styles (outline, ghost, secondary)
+    ○ Icons for better visual navigation
+    ○ Responsive layouts that adapt to different screen sizes
+
+#Navigation System
+
+• Implemented dynamic navigation based on user authentication status
+• Created conditional rendering for different user roles
+• Added responsive design for both desktop and mobile views
+• Set up proper routing for all sections of the application
+
+
+#Technical Improvements
+
+• Fixed routing conflicts in the Next.js application
+• Resolved issues with component exports in layout files
+• Improved component structure and file organization
+• Implemented proper error handling for auth-related operations
+
+#In-Progress Features
+
+• Onboarding flow for new users
+• Appointment booking system
+• Doctor and admin dashboards
+• Patient appointment management
