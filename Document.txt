@@ -2,7 +2,7 @@
 
 #Project Overview
 
-The project is a Doctors Appointment Platform called "InstaCheckup" built with Next.js and using Clerk for authentication. The application supports multiple user roles (Admin, Doctor, Patient, and Unassigned) with different interfaces and permissions for each role.
+The project is a Doctors Appointment Platform called "MediMeet" built with Next.js and using Clerk for authentication. The application supports multiple user roles (Admin, Doctor, Patient, and Unassigned) with different interfaces and permissions for each role.
 
 #Progress So Far
 Authentication System
@@ -60,6 +60,11 @@ Authentication System
 • Enhanced the visual hierarchy and spacing in the pricing table component
 • Improved hover effects and transitions for interactive elements
 • Ensured consistent styling across the pricing table and checkout page
+• Fixed Prisma TransactionType error by replacing invalid 'CREDIT_ALLOCATION' with 'ADMIN_ADJUSTMENT'
+• Improved error handling for credit allocation system
+• Ensured proper validation of user subscription plans before allocating credits
+• Enhanced database transaction logic for credit updates
+• Revalidated paths to reflect updated credit balances dynamically
 
 #In-Progress Features
 
@@ -67,3 +72,6 @@ Authentication System
 • Appointment booking system
 • Doctor and admin dashboards
 • Patient appointment management
+• Debugging and refining credit allocation system
+• Enhancing subscription management for patients
+• Testing and validating database transactions for user credits
