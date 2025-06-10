@@ -66,6 +66,27 @@ Authentication System
 • Enhanced database transaction logic for credit updates
 • Revalidated paths to reflect updated credit balances dynamically
 
+#Recent Updates
+
+• Fixed Prisma TransactionType error by replacing invalid 'CREDIT_ALLOCATION' with 'ADMIN_ADJUSTMENT'.
+• Improved error handling for the credit allocation system.
+• Ensured proper validation of user subscription plans before allocating credits.
+• Enhanced database transaction logic for credit updates.
+• Revalidated paths to reflect updated credit balances dynamically.
+• Styled the onboarding page:
+    ○ Reordered cards to display "Join as a Patient" first.
+    ○ Adjusted card widths to make them smaller (`w-80`).
+    ○ Reduced the gap between cards on large screens (`gap-2 md:gap-4`).
+• Updated the pricing table component:
+    ○ Applied a consistent dark theme with gray backgrounds and visible borders.
+    ○ Enhanced hover effects for better interactivity.
+    ○ Improved typography for better readability.
+    ○ Styled buttons and badges to match the dark theme.
+• Styled the checkout page:
+    ○ Applied dark theme colors for background, text, and input fields.
+    ○ Added consistent borders and padding for form elements.
+    ○ Improved button styling for better user experience.
+
 #In-Progress Features
 
 • Onboarding flow for new users
