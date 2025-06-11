@@ -32,12 +32,7 @@ Authentication System
     ○ Buttons with various styles (outline, ghost, secondary)
     ○ Icons for better visual navigation
     ○ Responsive layouts that adapt to different screen sizes
-• Updated the pricing table component:
-    ○ Applied a consistent dark theme with gray backgrounds and visible borders
-    ○ Enhanced hover effects for better interactivity
-    ○ Improved typography for better readability
-    ○ Styled buttons and badges to match the dark theme
-• Styled the checkout page:
+    ○ Styled the checkout page:
     ○ Applied dark theme colors for background, text, and input fields
     ○ Added consistent borders and padding for form elements
     ○ Improved button styling for better user experience
@@ -68,6 +63,13 @@ Authentication System
 
 #Recent Updates
 
+• Fixed typos in the onboarding form schema and form handling by replacing `speciality` with `specialty`.
+• Ensured consistency in the `SPECIALTIES` array by verifying the emerald color and structure of icons.
+• Debugged and improved the "Submit for Verification" button functionality in the onboarding form.
+• Enhanced error handling and added debugging logs for better form submission feedback.
+• Updated the onboarding page layout:
+    ○ Increased the size of the select field for better usability.
+    ○ Improved the visual hierarchy of form elements.
 • Fixed Prisma TransactionType error by replacing invalid 'CREDIT_ALLOCATION' with 'ADMIN_ADJUSTMENT'.
 • Improved error handling for the credit allocation system.
 • Ensured proper validation of user subscription plans before allocating credits.
@@ -86,6 +88,11 @@ Authentication System
     ○ Applied dark theme colors for background, text, and input fields.
     ○ Added consistent borders and padding for form elements.
     ○ Improved button styling for better user experience.
+• Updated the choose-role page:
+    ○ Added functionality to allow users to select their role as "Patient" or "Doctor".
+    ○ Implemented dynamic transitions between role selection and onboarding forms.
+    ○ Styled the cards with hover effects and responsive layouts.
+    ○ Enhanced the "Join as a Patient" and "Join as a Doctor" cards for better user experience.
 
 #In-Progress Features
 
