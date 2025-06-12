@@ -161,8 +161,9 @@ const OnboardingPage = () => {
               <Select
                 value={specialtyValue}
                 onValueChange={(value) => setValue("specialty", value)}
+                className="w-full"
               >
-                <SelectTrigger id="specialty">
+                <SelectTrigger id="specialty" className="w-full">
                   <SelectValue placeholder="Select your specialty" />
                 </SelectTrigger>
                 <SelectContent>

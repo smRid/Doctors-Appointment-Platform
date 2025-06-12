@@ -70,6 +70,7 @@ Authentication System
 • Updated the onboarding page layout:
     ○ Increased the size of the select field for better usability.
     ○ Improved the visual hierarchy of form elements.
+    ○ Aligned the Specialty field with other fields for consistent layout.
 • Fixed Prisma TransactionType error by replacing invalid 'CREDIT_ALLOCATION' with 'ADMIN_ADJUSTMENT'.
 • Improved error handling for the credit allocation system.
 • Ensured proper validation of user subscription plans before allocating credits.
@@ -93,6 +94,12 @@ Authentication System
     ○ Implemented dynamic transitions between role selection and onboarding forms.
     ○ Styled the cards with hover effects and responsive layouts.
     ○ Enhanced the "Join as a Patient" and "Join as a Doctor" cards for better user experience.
+• Updated the doctor verification page:
+    ○ Added a form for doctors to provide their medical specialty, years of experience, credential document link, and service description.
+    ○ Implemented validation for all fields using Zod and react-hook-form.
+    ○ Styled the form fields for consistent alignment and usability.
+    ○ Enhanced the "Submit for Verification" button with loading states and error handling.
+    ○ Improved user feedback with success and error messages.
 
 #In-Progress Features
 
