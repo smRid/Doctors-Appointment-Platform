@@ -52,6 +52,14 @@ MediMeet is a Doctors Appointment Platform built with Next.js and Tailwind CSS, 
 - Enabled dynamic transitions between role selection and onboarding forms.
 - Styled cards with hover effects and responsive layouts.
 
+### Button and Link Enhancements
+- Added `cursor-pointer` to buttons and links across the platform for improved UX feedback.
+- Debugged and fixed redirection issues for links like "Sign Up Now" and "Find Doctors".
+
+### Clerk Checkout Flow
+- Updated `afterSuccessUrl` to ensure proper redirection after payment.
+- Debugged onboarding flow to eliminate 404 errors.
+
 # In-Progress Features
 - Onboarding flow for new users.
 - Appointment booking system.
@@ -63,3 +71,28 @@ MediMeet is a Doctors Appointment Platform built with Next.js and Tailwind CSS, 
 - Expand testing coverage for database transactions.
 - Optimize performance for large-scale user interactions.
 - Enhance accessibility and localization features.
+
+# Tech Stack
+
+## Client-Side Technologies
+- **Next.js**: Framework for building server-rendered React applications with optimized performance.
+- **Tailwind CSS**: Utility-first CSS framework for creating responsive and modern UI designs.
+- **Clerk**: Authentication and user management library for seamless sign-in, sign-up, and role-based access.
+
+## Server-Side Technologies
+- **Prisma**: ORM for database management, enabling efficient queries and schema migrations.
+- **Node.js**: Runtime environment for executing server-side JavaScript.
+- **Next.js API Routes**: Built-in serverless functions for handling backend logic and API requests.
+
+## Database
+- **PostgreSQL**: Relational database for storing user data, appointments, and transactions.
+
+## Additional Tools
+- **Zod**: Schema validation library for ensuring data integrity.
+- **Lucide React**: Icon library for enhancing UI components.
+- **Toast Notifications**: Feedback mechanism for user actions and system events.
+
+This comprehensive tech stack ensures scalability, performance, and a seamless user experience across the platform.
+
+# Conclusion
+MediMeet has evolved into a robust platform with tailored features for different user roles. Leveraging Next.js, Tailwind CSS, Clerk, and Prisma, the project demonstrates a strong foundation for scalable and user-friendly healthcare solutions. Continuous improvements in UI/UX, backend logic, and database management ensure MediMeet remains a reliable and innovative platform for users.
