@@ -22,9 +22,10 @@ export default async function PatientAppointmentsPage() {
         title="My Appointments"
         backLink="/doctors"
         backLabel="Find Doctors"
+        backButtonClassName="cursor-pointer"
       />
 
-      <Card className="border-emerald-900/20 max-h-[90vh] overflow-y-auto">
+      <Card className="border-emerald-900/20">
         <CardHeader>
           <CardTitle className="text-xl font-bold text-white flex items-center">
             <Calendar className="h-5 w-5 mr-2 text-emerald-400" />

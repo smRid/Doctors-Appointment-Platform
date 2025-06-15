@@ -39,7 +39,7 @@ const page = () => {
                   size="lg"
                   className="border-emerald-700/30 hover:bg-muted/80"
                 >
-                  <Link href="/doctors">Find Doctors</Link>
+                  <Link href="/doctors" className="cursor-pointer">Find Doctors</Link>
                 </Button>
                 </div>
             </div>
@@ -206,7 +206,7 @@ const page = () => {
                     size="lg"
                     className="bg-emerald-600 text-white hover:bg-emerald-700"
                   >
-                    <Link href="/sign-up">Sign Up Now</Link>
+                    <Link href="/sign-up" className="cursor-pointer">Sign Up Now</Link>
                   </Button>
                   <Button
                     asChild

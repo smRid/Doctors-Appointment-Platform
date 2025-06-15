@@ -14,29 +14,26 @@ import Image from "next/image";
 import { checkAndAllocateCredits } from "@/actions/credits";
 import { Badge } from "./ui/badge";
 
-  const Header = async () => {
+const Header = async () => {
   const user = await checkUser();
   if (user?.role === "PATIENT") {
     await checkAndAllocateCredits(user);
   }
 
   return (
-
-    
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-10 supports-[backdrop-filter]:bg-background/60">
-        <nav className='container mx-auto px-4 h-16 flex items-center justify-between'>
-            <Link href="/">
-                <Image
-                    src="/logo-single.png"
-                    alt="InstaCheckup Logo"
-                    width={200}
-                    height={60}
-                    className='h-10 w-auto object-contain'
-                />
-
-      </Link>
-      <div className='flex items-center space-x-2'>
-        <SignedIn>
+      <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
+        <Link href="/">
+          <Image
+            src="/logo-single.png"
+            alt="InstaCheckup Logo"
+            width={200}
+            height={60}
+            className="h-10 w-auto object-contain"
+          />
+        </Link>
+        <div className="flex items-center space-x-2">
+          <SignedIn>
             {/* Admin Links */}
             {user?.role === "ADMIN" && (
               <Link href="/admin">
@@ -55,7 +52,7 @@ import { Badge } from "./ui/badge";
 
             {/* Doctor Links */}
             {user?.role === "DOCTOR" && (
-              <Link href="/doctor">
+              <Link href="/doctor" className="cursor-pointer">
                 <Button
                   variant="outline"
                   className="hidden md:inline-flex items-center gap-2"
@@ -74,12 +71,12 @@ import { Badge } from "./ui/badge";
               <Link href="/appointments">
                 <Button
                   variant="outline"
-                  className="hidden md:inline-flex items-center gap-2"
+                  className="hidden md:inline-flex items-center gap-2 cursor-pointer"
                 >
                   <Calendar className="h-4 w-4" />
                   My Appointments
                 </Button>
-                <Button variant="ghost" className="md:hidden w-10 h-10 p-0">
+                <Button variant="ghost" className="md:hidden w-10 h-10 p-0 cursor-pointer">
                   <Calendar className="h-4 w-4" />
                 </Button>
               </Link>
@@ -90,12 +87,12 @@ import { Badge } from "./ui/badge";
               <Link href="/onboarding">
                 <Button
                   variant="outline"
-                  className="hidden md:inline-flex items-center gap-2"
+                  className="hidden md:inline-flex items-center gap-2 cursor-pointer"
                 >
                   <User className="h-4 w-4" />
                   Complete Profile
                 </Button>
-                <Button variant="ghost" className="md:hidden w-10 h-10 p-0">
+                <Button variant="ghost" className="md:hidden w-10 h-10 p-0 cursor-pointer">
                   <User className="h-4 w-4" />
                 </Button>
               </Link>
@@ -122,14 +119,11 @@ import { Badge } from "./ui/badge";
               </Badge>
             </Link>
           )}
-
-
-
-        <SignedOut>
-          <SignInButton>
-            <Button variant="secondary">Sign In</Button>
-          </SignInButton>
-        </SignedOut>
+          <SignedOut>
+            <SignInButton>
+              <Button variant="secondary" className="cursor-pointer">Sign In</Button>
+            </SignInButton>
+          </SignedOut>
 
           <SignedIn>
           <UserButton 
@@ -143,11 +137,10 @@ import { Badge } from "./ui/badge";
           
           />
         </SignedIn>
-      </div>
-
-    </nav>
+        </div>
+      </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header;
