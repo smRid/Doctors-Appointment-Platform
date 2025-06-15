@@ -12,6 +12,8 @@ const PLAN_CREDITS = {
   premium: 24, // Premium plan: 24 credits per month
 };
 
+const APPOINTMENT_CREDIT_COST = 2; // Number of credits required for booking an appointment
+
 export async function checkAndAllocateCredits(user) {
     try {
         if(!user) {
