@@ -43,13 +43,14 @@ const page = () => {
                 </Button>
                 </div>
             </div>
-             <div className="relative h-[300px] sm:h-[400px] md:h-[600px] lg:h-[500px] rounded-xl overflow-hidden">
+             <div className="relative h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden flex items-center justify-center">
                <Image
                 src="/banner2.png"
                 alt="Doctor consultation"
                 fill
                 priority
-                className="object-cover sm:object-contain md:object-cover md:pt-14 rounded-xl"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                className="object-contain rounded-xl"
               />
             </div>
           </div>

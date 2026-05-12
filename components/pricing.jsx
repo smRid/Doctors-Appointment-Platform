@@ -4,10 +4,32 @@ import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { PricingTable } from "@clerk/nextjs";
 
+class PricingErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="text-center py-8 text-muted-foreground">
+          <p>Pricing information is currently unavailable.</p>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 const Pricing = () => {
   return (
     <Card className="border-emerald-900/30 shadow-lg bg-gradient-to-b from-emerald-950/30 to-transparent">
-      <CardContent className="p-6 md:p-8">        <PricingTable
+      <CardContent className="p-6 md:p-8">
+        <PricingErrorBoundary>
+          <PricingTable
           appearance={{
             baseTheme: "dark",
             variables: {
@@ -84,6 +106,7 @@ const Pricing = () => {
             },
           }}
         />
+        </PricingErrorBoundary>
       </CardContent>
     </Card>
   );
